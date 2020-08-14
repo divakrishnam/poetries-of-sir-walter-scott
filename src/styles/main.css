@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.jumbotron {
+  color: #ffffff;
+  background-image: url("../images/bg-cover-general.jpg") !important;
+  padding: 30px 0px !important;
+  border-radius: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.jumbotron-contain {
+  overflow: auto;
+  margin: auto;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-contain > img {
+  display: inline;
+  width: 160px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.jumbotron-desc > h1 {
+  font-family: "Berkshire Swash", cursive;
+}
+
+.container {
+  overflow: auto !important;
+}
+
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-flow: column !important;
+  float: left;
+  width: 70%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.card > h3 {
+  font-family: "Berkshire Swash", cursive;
+}
+
+.btn {
+  margin: 20px 0px -10px !important;
+}
+
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+  margin: 10px 0px;
+  text-align: center;
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+.profile > h3 {
+  font-family: "Berkshire Swash", cursive;
+}
+.profile > img {
+  border-radius: 50%;
+  margin: 10px 0px 15px;
+}
+
+footer {
+  background-color: #1f2021;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.footer-copyright > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-copyright > a:hover {
+  color: #454647;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile,
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+
+  .profile {
+    margin-bottom: 10px;
+  }
+
+  .jumbotron-contain>img {
+      display: none;
+  }
+
+  .jumbotron-contain {
+      width: 100%;
+      margin: 0px;
+      padding: 0px 10px;
+      text-align: center;
+  }
+}
